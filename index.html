@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Speed Racer</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+    <!-- Firebase SDK CODE ADD BELOW -->
+    <script type="module">
+  
+  const firebaseConfig = {
+    apiKey: "AIzaSyBd4c1YJ56LmyYJL4WaO9cDcRcOXAG2SQw",
+    authDomain: "ball-race-online.firebaseapp.com",
+    databaseURL: "https://ball-race-online-default-rtdb.firebaseio.com",
+    projectId: "ball-race-online",
+    storageBucket: "ball-race-online.appspot.com",
+    messagingSenderId: "261159074181",
+    appId: "1:261159074181:web:6104a97e3d79e058e42cec"
+  };
+
+ 
+    
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+
+   
+  </head>
+  <body>
+    
+    <script src="./sketch.js"></script>
+  </body>
+</html>
